@@ -18,22 +18,22 @@ with st.container():
         cod_store = st.selectbox("Escolha sua loja:", storesPI)
         if cod_store == "20" or cod_store == "25" or cod_store == "31" or cod_store == "33" or cod_store == "38" or cod_store == "204" or cod_store == "205" or cod_store == "236":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
-            arqMA = r"C:/Users/jose.martins/Documents/PROJETOS/APP/Códigos/PI - s soservi,s servico,s sala.xlsx"
+            arqMA = "Códigos/PI - s soservi,s servico,s sala.xlsx"
             checkMA = pd.read_excel(arqMA)
             st.dataframe(checkMA)
         elif cod_store == "15" or cod_store == "208":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
-            arqMA = r"C:/Users/jose.martins/Documents/PROJETOS/APP/Códigos/PI - s soservi,s servico,c sala.xlsx"
+            arqMA = "Códigos/PI - s soservi,s servico,c sala.xlsx"
             checkMA = pd.read_excel(arqMA)
             st.dataframe(checkMA)
         elif cod_store == "29" or cod_store == "37" or cod_store == "45" or cod_store == "244" or cod_store == "259"  or cod_store == "260"or cod_store == "16" or cod_store == "17" or cod_store == "18" or cod_store == "19" or cod_store == "21" or cod_store == "22" or cod_store == "23" or cod_store == "26" or cod_store == "36" or cod_store == "39" or cod_store == "40" or cod_store == "66" or cod_store == "86" or cod_store == "141" or cod_store == "144" or cod_store == "158" or cod_store == "206" or cod_store == "209" or cod_store == "210" or cod_store == "211" or cod_store == "215" or cod_store == "216" or cod_store == "217" or cod_store == "219" or cod_store == "220" or cod_store == "221" or cod_store == "223" or cod_store == "224" or cod_store == "225" or cod_store == "226" or cod_store == "227" or cod_store == "228" or cod_store == "229" or cod_store == "230" or cod_store == "231" or cod_store == "232" or cod_store == "233" or cod_store == "234" or cod_store == "235" or cod_store == "237":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
-            arqMA = r"C:/Users/jose.martins/Documents/PROJETOS/APP/Códigos/PI - s soservi,c servico,s sala.xlsx"
+            arqMA = "Códigos/PI - s soservi,c servico,s sala.xlsx"
             checkMA = pd.read_excel(arqMA)
             st.dataframe(checkMA)
         elif cod_store == "24" or cod_store == "193" or cod_store == "201" or cod_store == "207":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
-            arqMA = r"C:/Users/jose.martins/Documents/PROJETOS/APP/Códigos/PI - s soservi,c servico,c sala.xlsx"
+            arqMA = "Códigos/PI - s soservi,c servico,c sala.xlsx"
             checkMA = pd.read_excel(arqMA)
             st.dataframe(checkMA)
 
