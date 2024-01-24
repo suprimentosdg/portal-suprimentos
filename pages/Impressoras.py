@@ -36,6 +36,7 @@ with st.form(key="include_called"):
                 'regional': region2,
                 'loja': store2,
                 'impressora': printerTypes,
+                'opcao': options,
                 'observacao': obs,
                 'timestamp': formatted_timestamp
             }
