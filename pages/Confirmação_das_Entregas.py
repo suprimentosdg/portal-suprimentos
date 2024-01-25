@@ -12,7 +12,7 @@ mycolection = db.Cl01
 
 st.set_page_config(page_title="Confirmação de Entrega")
 st.title("Portal de Suprimentos")
-st.subheader("Confirmação de entrega")
+st.subheader("Confirmação de entregas")
 
 with st.form(key="include_confirmation"):
     name1 = st.text_input("Digite seu nome:", )
