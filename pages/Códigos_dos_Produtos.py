@@ -13,7 +13,7 @@ st.set_page_config(page_title="Código dos produtos")
 st.title("Portal de Suprimentos")
 st.subheader("Códigos dos produtos")
 
-cod_region = st.selectbox("Selecine sua Regional", regions)
+cod_region = st.selectbox("Selecione sua Regional:", regions)
 with st.container():
     if cod_region == "Piauí":
         cod_store = st.selectbox("Escolha sua loja:", storesPI)

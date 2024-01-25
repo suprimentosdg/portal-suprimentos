@@ -3,7 +3,7 @@ from datetime import datetime
 from pymongo import MongoClient
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
-suppliers = ["Atlas Papelaria", "Atakadinho Bahia",  "Brilhante", "Casa Norte", "Ecopaper", "Macropack", "Nacional", "Supermercado Jorge Batista", "Outros"]
+suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "E Pacheco", "KC Carvalho", "Macropack", "Nacional", "PL", "Supermercado Jorge Batista"]
 
 connectString = "mongodb+srv://suprimentosdglobo:suprimentosdg2023@cluster0.dx7yrgp.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(connectString)
@@ -17,10 +17,10 @@ st.subheader("Confirmação de entrega")
 with st.form(key="include_confirmation"):
     name1 = st.text_input("Digite seu nome:", )
     region1 = st.selectbox("Selecione sua regional:", regions)
-    store1 = st.number_input("Digite sua loja:", max_value=999)
-    supplier = st.selectbox("Selecione o Fornecedor :", suppliers)
+    store1 = st.number_input("Digite sua loja:", min_value=0, max_value=999)
+    supplier = st.selectbox("Selecione o Fornecedor:", suppliers)
     date = st.date_input("Data do recebimento:")
-    nf = st.number_input("N° da Nota Fiscal", step=1)
+    nf = st.number_input("N° da Nota Fiscal:", step=1)
     send1 = st.form_submit_button("Enviar")
     if send1:
         formatted_date = datetime.strftime(date, "%d/%m/%Y")
