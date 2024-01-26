@@ -24,10 +24,6 @@ with st.container():
             print("Caminho do arquivo:", arqpath)
             checkPI = pd.read_excel(arqpath)
             st.dataframe(checkPI)
-            if st.button("Exportar para Excel"):
-                export_path = f"checklist_{cod_store}.xlsx"
-                checkPI.to_excel(export_path, index=False)
-                st.success(f"Tabela exportada com sucesso para {export_path}")
         elif cod_store == "15" or cod_store == "208":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_sservico_csala.xlsx"
