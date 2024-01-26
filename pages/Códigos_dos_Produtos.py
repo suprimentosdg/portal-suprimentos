@@ -33,8 +33,8 @@ with st.container():
                 label="Baixar Tabela em xlsx",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
-                key="download_button",
-            )
+                key="download_button"
+                )
         elif cod_store == "15" or cod_store == "208":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_sservico_csala.xlsx"
