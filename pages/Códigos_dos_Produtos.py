@@ -32,7 +32,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela em xlsx",
+                label="Baixar Tabela!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -44,18 +44,57 @@ with st.container():
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
             st.dataframe(checkPI)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkPI.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "29" or cod_store == "37" or cod_store == "45" or cod_store == "244" or cod_store == "259"  or cod_store == "260"or cod_store == "16" or cod_store == "17" or cod_store == "18" or cod_store == "19" or cod_store == "21" or cod_store == "22" or cod_store == "23" or cod_store == "26" or cod_store == "36" or cod_store == "39" or cod_store == "40" or cod_store == "66" or cod_store == "86" or cod_store == "141" or cod_store == "144" or cod_store == "158" or cod_store == "206" or cod_store == "209" or cod_store == "210" or cod_store == "211" or cod_store == "215" or cod_store == "216" or cod_store == "217" or cod_store == "219" or cod_store == "220" or cod_store == "221" or cod_store == "223" or cod_store == "224" or cod_store == "225" or cod_store == "226" or cod_store == "227" or cod_store == "228" or cod_store == "229" or cod_store == "230" or cod_store == "231" or cod_store == "232" or cod_store == "233" or cod_store == "234" or cod_store == "235" or cod_store == "237":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_cservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
             st.dataframe(checkPI)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkPI.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "24" or cod_store == "193" or cod_store == "201" or cod_store == "207":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_cservico_csala.xlsx"
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
             st.dataframe(checkPI)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkPI.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
 
     elif cod_region == "Maranhão":
         cod_store = st.selectbox("Escolha sua loja:", storesMA)
@@ -65,18 +104,57 @@ with st.container():
             arqpath = os.path.join("pages", arqMA)
             checkMA = pd.read_excel(arqpath)
             st.dataframe(checkMA)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkMA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "27" or cod_store == "30" or cod_store == "32" or cod_store == "34" or cod_store == "35" or cod_store == "74" or cod_store == "76" or cod_store == "77" or cod_store == "152" or cod_store == "239" or cod_store == "240" or cod_store == "241" or cod_store == "242" or cod_store == "245" or cod_store == "246" or cod_store == "247" or cod_store == "248" or cod_store == "249" or cod_store == "250" or cod_store == "251" or cod_store == "254" or cod_store == "256" or cod_store == "258" or cod_store == "262" or cod_store == "263":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqMA = "MA_ssoservi_cservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqMA)
             checkMA = pd.read_excel(arqpath)
             st.dataframe(checkMA)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkMA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "243" or cod_store == "255":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqMA = "MA_ssoservi_cservico_csala.xlsx"
             arqpath = os.path.join("pages", arqMA)
             checkMA = pd.read_excel(arqpath)
             st.dataframe(checkMA)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkMA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
 
     elif cod_region == "Rio Grande do Norte":
         cod_store = st.selectbox("Escolha sua loja:", storesRN)
@@ -86,24 +164,76 @@ with st.container():
             arqpath = os.path.join("pages", arqRN)
             checkRN = pd.read_excel(arqpath)
             st.dataframe(checkRN)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkRN.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "302" or cod_store == "338":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqRN = "RN_csoservi_cservico_csala.xlsx"
             arqpath = os.path.join("pages", arqRN)
             checkRN = pd.read_excel(arqpath)
             st.dataframe(checkRN)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkRN.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "319":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqRN = "RN_csoservi_sservico_csala.xlsx"
             arqpath = os.path.join("pages", arqRN)
             checkRN = pd.read_excel(arqpath)
             st.dataframe(checkRN)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkRN.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "306" or cod_store == "308" or cod_store == "310" or cod_store == "320" or cod_store == "329" or cod_store == "331" or cod_store == "337":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqRN = "RN_csoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqRN)
             checkRN = pd.read_excel(arqpath)
             st.dataframe(checkRN)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkRN.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
 
     elif cod_region == "Bahia":
         cod_store = st.selectbox("Escolha sua loja:", storesBA)
@@ -113,30 +243,95 @@ with st.container():
             arqpath = os.path.join("pages", arqBA)
             checkBA = pd.read_excel(arqpath)
             st.dataframe(checkBA)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkBA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "161" or cod_store == "162" or cod_store == "171" or cod_store == "176" or cod_store == "186":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqBA = "BA_csoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqBA)
             checkBA = pd.read_excel(arqpath)
             st.dataframe(checkBA)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkBA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "165" or cod_store == "178":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqBA = "BA_csoservi_cservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqBA)
             checkBA = pd.read_excel(arqpath)
-            st.dataframe(checkBA)        
+            st.dataframe(checkBA)     
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkBA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )   
         elif cod_store == "164" or cod_store == "181" or cod_store == "184":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqBA = "BA_ssoservi_cservico_csala.xlsx"
             arqpath = os.path.join("pages", arqBA)
             checkBA = pd.read_excel(arqpath)
             st.dataframe(checkBA)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkBA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "187":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqBA = "BA_csoservi_cservico_csala.xlsx"
             arqpath = os.path.join("pages", arqBA)
             checkBA = pd.read_excel(arqpath)
-            st.dataframe(checkBA)              
+            st.dataframe(checkBA) 
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkBA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )             
 
     elif cod_region == "Pará":
         cod_store = st.selectbox("Escolha sua loja:", storesPA)
@@ -146,9 +341,35 @@ with st.container():
             arqpath = os.path.join("pages", arqPA)
             checkPA = pd.read_excel(arqpath)
             st.dataframe(checkPA)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkPA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "89" or cod_store == "298":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPA = r"PA_csoservi_cservico_csala.xlsx"
             arqpath = os.path.join("pages", arqPA)
             checkPA = pd.read_excel(arqpath)
             st.dataframe(checkPA)
+
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkPA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Tabela!",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
