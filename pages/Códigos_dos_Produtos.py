@@ -32,7 +32,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -51,7 +51,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -70,7 +70,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -89,7 +89,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -111,7 +111,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -130,7 +130,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -149,7 +149,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -171,7 +171,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -190,7 +190,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -209,7 +209,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -228,7 +228,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -250,7 +250,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -269,7 +269,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -288,7 +288,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -307,7 +307,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -326,7 +326,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -348,7 +348,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
@@ -367,7 +367,7 @@ with st.container():
             excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
-                label="Baixar Tabela!",
+                label="Baixar Checklist!",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
