@@ -25,17 +25,19 @@ with st.container():
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
             st.dataframe(checkPI)
+
             excel_buffer = BytesIO()
             with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
                 checkPI.to_excel(writer, index=False, header=True)
-                excel_bytes = excel_buffer.getvalue()
+            excel_bytes = excel_buffer.getvalue()
 
             st.download_button(
                 label="Baixar Tabela em xlsx",
                 data=excel_bytes,
                 file_name=f"checklist_loja_{cod_store}.xlsx",
-                key="download_button"
-                )
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
         elif cod_store == "15" or cod_store == "208":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_sservico_csala.xlsx"
