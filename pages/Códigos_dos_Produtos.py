@@ -21,9 +21,14 @@ with st.container():
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqPI)
-            print("Caminho do arquivo:", arqpath)
             checkPI = pd.read_excel(arqpath)
             st.dataframe(checkPI)
+            st.download_button(
+            label="Baixar Tabela!",
+            data=checkPI.to_excel(index=False, header=True),
+            file_name=f"checklist_loja_{cod_store}.xlsx",
+            key="download_button",
+        )
         elif cod_store == "15" or cod_store == "208":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_sservico_csala.xlsx"
