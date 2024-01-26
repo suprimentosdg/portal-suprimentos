@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
+from io import BytesIO
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 storesPI = ["29","37","45","244","259","260","15","16","17","18","19","20","21","22","23","24","25","26","31","33","36","38","39","40","66","86","141","144","158","193","200","201","204","205","206","207","208","209","210","211","215","216","217","219","220","221","223","224","225","226","227","228","229","230","231","232","233","234","235","236","237","238"]
@@ -28,7 +29,7 @@ with st.container():
             data=checkPI.to_excel(index=False, header=True),
             file_name=f"checklist_loja_{cod_store}.xlsx",
             key="download_button",
-        )
+            )
         elif cod_store == "15" or cod_store == "208":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_sservico_csala.xlsx"
