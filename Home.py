@@ -5,6 +5,7 @@ import pandas as pd
 from pymongo import MongoClient
 
 st.set_page_config(page_title="Portal de Suprimentos")
+st.sidebar.image("logo_globo.png")
 st.title("Portal de Suprimentos")
 st.subheader("Página inicial")
 st.write("---")
