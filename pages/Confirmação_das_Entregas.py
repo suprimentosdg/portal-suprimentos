@@ -13,7 +13,6 @@ col1.title("Portal de Suprimentos")
 image_path = "logo_globo.png"
 image = col2.image(image_path, width=80)
 st.subheader("Confirmação de entregas")
-st.write("---")
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "E Pacheco", "KC Carvalho", "Macropack", "Nacional", "PL", "Supermercado Jorge Batista"]

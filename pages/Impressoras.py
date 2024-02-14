@@ -13,7 +13,6 @@ col1.title("Portal de Suprimentos")
 image_path = "logo_globo.png"
 image = col2.image(image_path, width=80)
 st.subheader("Abertura de chamado para Impressora")
-st.write("---")
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 
