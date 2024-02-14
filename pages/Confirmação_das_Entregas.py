@@ -19,7 +19,7 @@ with st.form(key="include_confirmation"):
     region1 = st.selectbox("Selecione sua regional:", regions)
     store1 = st.number_input("Digite sua loja:", min_value=0, max_value=999)
     supplier = st.selectbox("Selecione o Fornecedor:", suppliers)
-    date = st.date_input("Data do recebimento:")
+    date = st.date_input("Data do recebimento:", format="%d/%m/%Y")
     nf = st.number_input("N° da Nota Fiscal:", step=1, format="%d")
     send1 = st.form_submit_button("Enviar")
     if send1:
