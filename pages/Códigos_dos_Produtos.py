@@ -4,16 +4,19 @@ import os
 from io import BytesIO
 from xlsxwriter import Workbook
 
+st.set_page_config(page_title="Código dos produtos")
+col1, col2 = st.columns([4, 1])
+col1.title("Portal de Suprimentos")
+image_path = "logo_globo.png"
+image = col2.image(image_path, width=80)
+st.subheader("Códigos dos produtos")
+
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 storesPI = ["29","37","45","244","259","260","15","16","17","18","19","20","21","22","23","24","25","26","31","33","36","38","39","40","66","86","141","144","158","193","200","201","204","205","206","207","208","209","210","211","215","216","217","219","220","221","223","224","225","226","227","228","229","230","231","232","233","234","235","236","237","238"]
 storesMA = ["27","28","30","32","34","35","44","74","76","77","152","239","240","241","242","243","245","246","247","248","249","250","251","252","253","254","255","256","257","258","262","263"]
 storesRN = ["117","123","302","303","304","305","306","308","309","310","311","314","317","318"," 319","320","321","329","331","334","335","337","338","340"]
 storesBA = ["161","162","163","164","165","169","171","176","178","179","181","182","184","186","187"]
 storesPA = ["80","81","82","83","84","85","87","89","90","91","95","298"]
-
-st.set_page_config(page_title="Código dos produtos")
-st.title("Portal de Suprimentos")
-st.subheader("Códigos dos produtos")
 
 cod_region = st.selectbox("Selecione sua Regional:", regions)
 with st.container():
