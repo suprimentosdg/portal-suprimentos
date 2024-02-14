@@ -23,7 +23,6 @@ with st.form(key="include_confirmation"):
     nf = st.number_input("N° da Nota Fiscal:", step=1, format="%d")
     send1 = st.form_submit_button("Enviar")
     if send1:
-        formatted_date = datetime.strftime(date, "%d/%m/%Y")
         current_timestamp = datetime.now().timestamp()
         formatted_timestamp = datetime.fromtimestamp(current_timestamp).strftime("%d/%m/%Y %H:%M:%S")
 
@@ -35,7 +34,7 @@ with st.form(key="include_confirmation"):
                 'regional': region1,
                 'loja': store1,
                 'fornecedor': supplier,
-                'data_recebimento': formatted_date,
+                'data_recebimento': date,
                 'nf': nf,
                 'timestamp': formatted_timestamp
             }
