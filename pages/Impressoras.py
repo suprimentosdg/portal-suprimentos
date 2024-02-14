@@ -2,16 +2,20 @@ import streamlit as st
 from datetime import datetime
 from pymongo import MongoClient
 
-regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
-
 connectString = "mongodb+srv://suprimentosdglobo:suprimentosdg2023@cluster0.dx7yrgp.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(connectString)
 db = client["confirmations"]
 mycolection = db.Cl02
 
 st.set_page_config(page_title="Impressoras")
-st.title("Portal de Suprimentos")
+col1, col2 = st.columns([4, 1])
+col1.title("Portal de Suprimentos")
+image_path = "logo_globo.png"
+image = col2.image(image_path, width=80)
 st.subheader("Abertura de chamado para Impressora")
+st.write("---")
+
+regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 
 with st.form(key="include_called"):
     name2 = st.text_input("Digite seu nome:")

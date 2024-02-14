@@ -2,17 +2,21 @@ import streamlit as st
 from datetime import datetime
 from pymongo import MongoClient
 
-regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
-suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "E Pacheco", "KC Carvalho", "Macropack", "Nacional", "PL", "Supermercado Jorge Batista"]
-
 connectString = "mongodb+srv://suprimentosdglobo:suprimentosdg2023@cluster0.dx7yrgp.mongodb.net/?retryWrites=true&w=majority"
 client = MongoClient(connectString)
 db = client["confirmations"]
 mycolection = db.Cl01
 
 st.set_page_config(page_title="Confirmação de Entrega")
-st.title("Portal de Suprimentos")
+col1, col2 = st.columns([4, 1])
+col1.title("Portal de Suprimentos")
+image_path = "logo_globo.png"
+image = col2.image(image_path, width=80)
 st.subheader("Confirmação de entregas")
+st.write("---")
+
+regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
+suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "E Pacheco", "KC Carvalho", "Macropack", "Nacional", "PL", "Supermercado Jorge Batista"]
 
 with st.form(key="include_confirmation"):
     name1 = st.text_input("Digite seu nome:", )
