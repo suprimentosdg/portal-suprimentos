@@ -20,7 +20,7 @@ suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Brilhante", "Casa Norte", "
 with st.form(key="include_confirmation"):
     name1 = st.text_input("Digite seu nome:", )
     region1 = st.selectbox("Selecione sua regional:", regions)
-    store1 = st.number_input("Digite sua loja:", value='', min_value=0, max_value=999)
+    store1 = st.number_input("Digite sua loja:", min_value=0, max_value=999)
     supplier = st.selectbox("Selecione o Fornecedor:", suppliers)
     date = st.date_input("Data do recebimento:", format="DD/MM/YYYY")
     nf = st.number_input("N° da Nota Fiscal:", step=1, format="%d")
