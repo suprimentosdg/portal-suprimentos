@@ -12,7 +12,7 @@ col1, col2 = st.columns([4, 1])
 col1.title("Portal de Suprimentos")
 image_path = "logo_globo.png"
 image = col2.image(image_path, width=80)
-st.subheader("Confirmação de entregas")
+st.subheader("Confirmação de entrega")
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "E Pacheco", "KC Carvalho", "Macropack", "Nacional", "PL", "Supermercado Jorge Batista"]
@@ -20,7 +20,7 @@ suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Brilhante", "Casa Norte", "
 with st.form(key="include_confirmation"):
     name1 = st.text_input("Digite seu nome:", )
     region1 = st.selectbox("Selecione sua regional:", regions)
-    store1 = st.number_input("Digite sua loja:", min_value=0, max_value=999)
+    store1 = st.number_input("Digite sua loja:", value='', min_value=0, max_value=999)
     supplier = st.selectbox("Selecione o Fornecedor:", suppliers)
     date = st.date_input("Data do recebimento:", format="DD/MM/YYYY")
     nf = st.number_input("N° da Nota Fiscal:", step=1, format="%d")
