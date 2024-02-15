@@ -18,7 +18,7 @@ st.write(
 st.write(
     "- Abrir chamados para solicitar manutenção, troca de impressoras e solicitações de toner;")
 st.write(
-    "- Consultar os produtos disponíveis para solicitação de sua loja, junto com os códigos deles;")
+    "- Consultar os produtos com seus códigos disponíveis para solicitação de sua loja;")
 st.write(
     "- Entrar em contato com o setor, que está sempre pronto para te atender e resolver qualquer problema.")
 st.markdown("Escolha no Menu ao lado a opção desejada.")
