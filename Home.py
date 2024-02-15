@@ -12,7 +12,7 @@ image = col2.image(image_path, width=80)
 st.subheader("Página inicial")
 st.write("---")
 st.markdown("Bem vindo ao portal do Setor de :blue[Suprimentos!]")
-st.markdown("O Portal de Suprimentos é uma plataforma online que facilita a o gerenciamento das compras e de seus processos que estão sob responsabilidade do Suprimentos. Aqui você pode:")
+st.markdown("O Portal de Suprimentos é uma plataforma online que facilita o gerenciamento das compras e dos processos que estão sob responsabilidade do Suprimentos. Aqui você pode:")
 st.write(
     "- Confirmar as entregas dos seus pedidos de forma rápida e segura;")
 st.write(
