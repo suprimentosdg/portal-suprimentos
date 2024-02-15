@@ -8,7 +8,7 @@ db = client["confirmations"]
 mycolection = db.Cl02
 
 st.set_page_config(page_title="Impressoras")
-col1, col2 = st.columns([4, 1])
+col1, col2 = st.columns([6, 1])
 col1.title("Portal de Suprimentos")
 image_path = "logo_globo.png"
 image = col2.image(image_path, width=80)
