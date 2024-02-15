@@ -16,9 +16,9 @@ st.markdown("O Portal de Suprimentos é uma plataforma online que facilita o ger
 st.caption(
     "- **Confirmar as entregas dos seus pedidos de forma rápida e segura;**")
 st.caption(
-    "- Abrir chamados para solicitar manutenção, troca de impressoras e de toner;")
-st.write(
-    "- Consultar os produtos com seus códigos disponíveis para solicitação de sua loja;")
-st.write(
-    "- Entrar em contato com o setor, que está sempre pronto para te atender e resolver qualquer problema.")
+    "- **Abrir chamados para solicitar manutenção, troca de impressoras e de toner;**")
+st.caption(
+    "- **Consultar os produtos com seus códigos disponíveis para solicitação de sua loja;**")
+st.caption(
+    "- **Entrar em contato com o setor, que está sempre pronto para te atender e resolver qualquer problema.**")
 st.markdown("Escolha no Menu ao lado a opção desejada.")
