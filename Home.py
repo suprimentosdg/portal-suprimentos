@@ -14,8 +14,11 @@ st.write("---")
 st.markdown("Bem vindo ao portal do Setor de :blue[Suprimentos!]")
 st.markdown("O Portal de Suprimentos é uma plataforma online que facilita a o gerenciamento das compras e de seus processos que estão sob responsabilidade do Suprimentos. Aqui você pode:")
 st.write(
-    "- Confirmar as entregas dos seus pedidos de forma rápida e segura;"
-    "- Abrir chamados para solicitar manutenção, troca de impressoras e solicitações de toner;"
-    "- Consultar os produtos disponíveis para solicitação de sua loja, junto com os códigos deles;"
+    "- Confirmar as entregas dos seus pedidos de forma rápida e segura;")
+st.write(
+    "- Abrir chamados para solicitar manutenção, troca de impressoras e solicitações de toner;")
+st.write(
+    "- Consultar os produtos disponíveis para solicitação de sua loja, junto com os códigos deles;")
+st.write(
     "- Entrar em contato com o setor, que está sempre pronto para te atender e resolver qualquer problema.")
 st.markdown("Escolha no Menu ao lado a opção desejada.")
