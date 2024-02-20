@@ -17,7 +17,7 @@ st.subheader("Confirmação de entrega")
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Autopel", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "E Pacheco", "KC Carvalho", "Macropack", "Nacional", "PL Distribuidora", "Supermercado São Jorge (JB)"]
 
-with st.form(key="include_confirmation"):
+with st.form(key="include_confirmation", clear_on_submit=True):
     name1 = st.text_input("Digite seu nome:", )
     region1 = st.selectbox("Selecione sua regional:", regions)
     store1 = st.number_input("Digite sua loja:", min_value=0, max_value=999)
