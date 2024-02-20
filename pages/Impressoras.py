@@ -16,7 +16,7 @@ st.subheader("Abertura de chamado para Impressora")
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 
-with st.form(key="include_called"):
+with st.form(key="include_called", clear_on_submit=True):
     name2 = st.text_input("Digite seu nome:")
     region2 = st.selectbox("Selecione sua regional:", regions)
     store2 = st.number_input("Digite sua loja:", min_value=0, max_value=999)
