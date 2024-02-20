@@ -17,6 +17,10 @@ st.subheader("Confirmação de entrega")
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Autopel", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "E Pacheco", "KC Carvalho", "Macropack", "Nacional", "PL Distribuidora", "Supermercado São Jorge (JB)"]
 
+def main():
+    if "form_submitted" not in st.session_state:
+        st.session_state.form_submitted = False
+
 with st.form(key="include_confirmation"):
     name1 = st.text_input("Digite seu nome:", )
     region1 = st.selectbox("Selecione sua regional:", regions)
@@ -44,3 +48,7 @@ with st.form(key="include_confirmation"):
             }
             mycolection.insert_one(data_to_insert)
             st.success("Dados enviados com sucesso!")
+            st.session_state.form_submitted = True
+
+if __name__ == "__main__":
+    main()
