@@ -13,7 +13,7 @@ st.subheader("Códigos dos produtos")
 st.write("---")
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
-storesPI = ["29","37","45","244","259","260","15","16","17","18","19","20","21","22","23","24","25","26","31","33","36","38","39","40","66","86","141","144","158","193","200","201","204","205","206","207","208","209","210","211","215","216","217","219","220","221","223","224","225","226","227","228","229","230","231","232","233","234","235","236","237","238"]
+storesPI = ["15","16","17","18","19","20","21","22","23","24","25","26","29","31","33","36","37","38","39","40","45","66","86","141","144","158","193","200","201","204","205","206","207","208","209","210","211","215","216","217","219","220","221","223","224","225","226","227","228","229","230","231","232","233","234","235","236","237","238","244","259","260"]
 storesMA = ["27","28","30","32","34","35","44","74","76","77","152","239","240","241","242","243","245","246","247","248","249","250","251","252","253","254","255","256","257","258","262","263"]
 storesRN = ["117","123","302","303","304","305","306","308","309","310","311","314","317","318"," 319","320","321","329","331","334","335","337","338","340"]
 storesBA = ["161","162","163","164","165","169","171","176","178","179","181","182","184","186","187"]
@@ -102,7 +102,7 @@ with st.container():
 
     elif cod_region == "Maranhão":
         cod_store = st.selectbox("Escolha sua loja:", storesMA)
-        if cod_store == "28" or cod_store == "44" or cod_store == "252" or cod_store == "253" or cod_store == "257":
+        if cod_store == "28" or cod_store == "44" or cod_store == "253" or cod_store == "257":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqMA = "MA_ssoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqMA)
@@ -121,7 +121,7 @@ with st.container():
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
-        elif cod_store == "27" or cod_store == "30" or cod_store == "32" or cod_store == "34" or cod_store == "35" or cod_store == "74" or cod_store == "76" or cod_store == "77" or cod_store == "152" or cod_store == "239" or cod_store == "240" or cod_store == "241" or cod_store == "242" or cod_store == "245" or cod_store == "246" or cod_store == "247" or cod_store == "248" or cod_store == "249" or cod_store == "250" or cod_store == "251" or cod_store == "254" or cod_store == "256" or cod_store == "258" or cod_store == "262" or cod_store == "263":
+        elif cod_store == "27" or cod_store == "30" or cod_store == "32" or cod_store == "34" or cod_store == "35" or cod_store == "74" or cod_store == "76" or cod_store == "77" or cod_store == "152" or cod_store == "239" or cod_store == "240" or cod_store == "241" or cod_store == "242" or cod_store == "245" or cod_store == "246" or cod_store == "247" or cod_store == "248" or cod_store == "249" or cod_store == "250" or cod_store == "251" or cod_store == "252" or cod_store == "254" or cod_store == "256" or cod_store == "258" or cod_store == "262" or cod_store == "263":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqMA = "MA_ssoservi_cservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqMA)
@@ -162,7 +162,7 @@ with st.container():
 
     elif cod_region == "Rio Grande do Norte":
         cod_store = st.selectbox("Escolha sua loja:", storesRN)
-        if cod_store == "117" or cod_store == "123" or cod_store == "303" or cod_store == "304" or cod_store == "305" or cod_store == "309" or cod_store == "311" or cod_store == "314" or cod_store == "317" or cod_store == "318" or cod_store == "321" or cod_store == "334" or cod_store == "335" or cod_store == "340":
+        if cod_store == "117" or cod_store == "123" or cod_store == "303" or cod_store == "304" or cod_store == "305" or cod_store == "309" or cod_store == "311" or cod_store == "314" or cod_store == "317" or cod_store == "318" or cod_store == "321" or cod_store == "329" or cod_store == "334" or cod_store == "335" or cod_store == "337" or cod_store == "340":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqRN = "RN_csoservi_cservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqRN)
@@ -219,7 +219,7 @@ with st.container():
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
-        elif cod_store == "306" or cod_store == "308" or cod_store == "310" or cod_store == "320" or cod_store == "329" or cod_store == "331" or cod_store == "337":
+        elif cod_store == "306" or cod_store == "308" or cod_store == "310" or cod_store == "320" or cod_store == "331":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqRN = "RN_csoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqRN)
