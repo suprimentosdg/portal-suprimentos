@@ -15,7 +15,7 @@ image = col2.image(image_path, width=80)
 st.subheader("Confirmação de entrega")
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
-suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Autopel", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "E Pacheco", "KC Carvalho", "Macropack", "Nacional", "PL Distribuidora", "Supermercado São Jorge (JB)"]
+suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Autopel", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "Macropack", "Nacional", "Shopping Hospitalar", "Supermercado São Jorge (JB)"]
 
 with st.form(key="include_confirmation", clear_on_submit=True):
     name1 = st.text_input("Digite seu nome:", )
