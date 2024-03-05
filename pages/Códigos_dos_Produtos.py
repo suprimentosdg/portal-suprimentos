@@ -19,7 +19,7 @@ storesRN = ["117","123","302","303","304","305","306","308","309","310","311","3
 storesBA = ["161","162","163","164","165","169","171","176","178","179","181","182","184","186","187"]
 storesPA = ["80","81","82","83","84","85","87","89","90","91","95","298"]
 
-col1, col2, col3 = st.columns([1, 2, 1])
+col1, col2, col3 = st.columns([1, 1, 1])
 cod_region = col2.selectbox("Selecione sua Regional:", regions)
 with st.container():
     if cod_region == "Piauí":
