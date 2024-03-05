@@ -29,7 +29,7 @@ with st.container():
             arqPI = "PI_ssoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
-            st.dataframe(checkPI)
+            st.write(checkPI)
 
             excel_buffer = BytesIO()
             with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
