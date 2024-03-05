@@ -102,7 +102,7 @@ with st.container():
             )
 
     elif cod_region == "Maranhão":
-        cod_store = col2.selectbox("Escolha sua loja:", storesMA)
+        cod_store = col2.selectbox("Selecione sua loja:", storesMA)
         if cod_store == "28" or cod_store == "44" or cod_store == "253" or cod_store == "257":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqMA = "MA_ssoservi_sservico_ssala.xlsx"
@@ -162,7 +162,7 @@ with st.container():
             )
 
     elif cod_region == "Rio Grande do Norte":
-        cod_store = col2.selectbox("Escolha sua loja:", storesRN)
+        cod_store = col2.selectbox("Selecione sua loja:", storesRN)
         if cod_store == "117" or cod_store == "123" or cod_store == "303" or cod_store == "304" or cod_store == "305" or cod_store == "309" or cod_store == "311" or cod_store == "314" or cod_store == "317" or cod_store == "318" or cod_store == "321" or cod_store == "329" or cod_store == "334" or cod_store == "335" or cod_store == "337" or cod_store == "340":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqRN = "RN_csoservi_cservico_ssala.xlsx"
@@ -241,7 +241,7 @@ with st.container():
             )
 
     elif cod_region == "Bahia":
-        cod_store = col2.selectbox("Escolha sua loja:", storesBA)
+        cod_store = col2.selectbox("Selecione sua loja:", storesBA)
         if cod_store == "163" or cod_store == "169" or cod_store == "171" or cod_store == "179" or cod_store == "182":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqBA = "BA_ssoservi_sservico_ssala.xlsx"
@@ -358,7 +358,7 @@ with st.container():
             )          
 
     elif cod_region == "Pará":
-        cod_store = col2.selectbox("Escolha sua loja:", storesPA)
+        cod_store = col2.selectbox("Selecione sua loja:", storesPA)
         if cod_store == "80" or cod_store == "81" or cod_store == "82" or cod_store == "83" or cod_store == "84" or cod_store == "85" or cod_store == "87" or cod_store == "90" or cod_store == "91" or cod_store == "95":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPA = r"PA_csoservi_cservico_ssala.xlsx"
