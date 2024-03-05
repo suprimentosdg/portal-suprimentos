@@ -30,7 +30,7 @@ with st.container():
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
             checkPI_html = checkPI.to_html(index=False)
-            st.markdown(f'<div style="text-align: center">{checkPI_html}</div>', unsafe_allow_html=True)
+            st.markdown(f'<div style="text-align: center; font-size: 0.8em">{checkPI_html}</div>', unsafe_allow_html=True)
 
             excel_buffer = BytesIO()
             with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
