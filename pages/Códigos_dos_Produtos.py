@@ -19,11 +19,11 @@ storesRN = ["117","123","302","303","304","305","306","308","309","310","311","3
 storesBA = ["161","162","163","164","165","169","171","176","178","179","181","182","184","186","187"]
 storesPA = ["80","81","82","83","84","85","87","89","90","91","95","298"]
 
-col1, col2, col3 = st.columns([1, 1.2, 1.2])
+col1, col2, col3 = st.columns([1, 0.8, 1.2])
 cod_region = col1.selectbox("Selecione sua Regional:", regions)
 with st.container():
     if cod_region == "Piauí":
-        cod_store = col1.selectbox("Selecione sua loja:", storesPI)
+        cod_store = col2.selectbox("Selecione sua loja:", storesPI)
         if cod_store == "20" or cod_store == "25" or cod_store == "31" or cod_store == "33" or cod_store == "38" or cod_store == "204" or cod_store == "205" or cod_store == "236":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqPI = "PI_ssoservi_sservico_ssala.xlsx"
