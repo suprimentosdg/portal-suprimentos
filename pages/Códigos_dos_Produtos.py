@@ -299,7 +299,7 @@ with st.container():
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )   
-        elif cod_store == "181" or cod_store == "184":
+        elif cod_store == "164" or cod_store == "181" or cod_store == "184":
             st.subheader(f"Checklist de Compras da loja - {cod_store}")
             arqBA = "BA_ssoservi_cservico_csala.xlsx"
             arqpath = os.path.join("pages", arqBA)
@@ -337,12 +337,6 @@ with st.container():
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )             
-        elif cod_store == "164":
-            st.subheader(f"Checklist de Compras da loja - {cod_store}")
-            arqBA = "BA_ssoservi_cservico_ssala.xlsx"
-            arqpath = os.path.join("pages", arqBA)
-            checkBA = pd.read_excel(arqpath)
-            st.dataframe(checkBA) 
 
             excel_buffer = BytesIO()
             with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
