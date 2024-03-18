@@ -21,7 +21,7 @@ with st.form(key="include_called", clear_on_submit=True):
     region = st.selectbox("Selecione sua Regional:", regions)
     store = st.number_input("Digite sua Loja:", min_value=0, max_value=999)
     printerTypes = st.selectbox("Selecione seu modelo de Impressora:", ["BROTHER DCP 1602","BROTHER DCP 1617","BROTHER DCP 7065","BROTHER DCP 7460","BROTHER DCP 7860","BROTHER DCP 8112","BROTHER DCP 8152","BROTHER DCP 8157","BROTHER DCP 8912","BROTHER DCP L5652DN","CANON G2110","CANON G3111","HP LASER JET M125","HP LASER JET M127","HP LASER JET M225","HP LASER JET M426","HP LASER JET M428","HP LASER JET M1132","HP LASER JET M1212","HP LASER JET M1536", "PANTUM M6559 NW"])
-    options = st.selectbox("Escolha uma Opção:", ["Solicitação de toner", "Assistência técnica"])
+    options = st.selectbox("Selecione a opção desejada:", ["Solicitação de toner", "Assistência técnica"])
     obs = st.text_area("Observação:", placeholder="Em caso de chamado para assistência técnica ou troca da Impressora, informe o motivo da solicitação.")
     send2 = st.form_submit_button("Enviar Solicitação")
     if send2:
