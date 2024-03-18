@@ -18,7 +18,7 @@ st.caption(
 st.caption(
     "- **Abrir chamados para solicitar manutenção, toner e troca de impressoras;**")
 st.caption(
-    "- **Consultar os produtos que fazem parte do checklist de compras da sua loja junto com seus códigos atualizados;**")
+    "- **Consultar os produtos que fazem parte do checklist de compras da sua loja junto com os códigos dos produtos atualizados;**")
 st.caption(
     "- **Entrar em contato com o Suprimentos, setor que está sempre pronto para lhe atender e resolver qualquer problema.**")
 st.markdown("Escolha no Menu ao lado a opção desejada.")
