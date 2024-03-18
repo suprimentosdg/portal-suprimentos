@@ -44,7 +44,7 @@ with st.container():
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
         elif cod_store == "15" or cod_store == "208":
-            st.subheader(f"Checklist de Compras da Loja{cod_store}")
+            st.subheader(f"Checklist de Compras da Loja {cod_store}")
             arqPI = "PI_ssoservi_sservico_csala.xlsx"
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
