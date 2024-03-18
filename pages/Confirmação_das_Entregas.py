@@ -18,7 +18,7 @@ regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Autopel", "Brilhante", "Casa Norte", "Distribuidora Teresina", "Ecopaper", "J D R Sousa", "L C Vaz", "Macropack", "Mix Comércio", "Nacional", "Shopping Hospitalar", "Supermercado São Jorge (JB)"]
 
 with st.form(key="include_confirmation", clear_on_submit=True):
-    name = st.text_input("Digite seu nome:", )
+    name = st.text_input("Digite seu Nome:", )
     region = st.selectbox("Selecione sua Regional:", regions)
     store = st.number_input("Digite sua Loja:", min_value=0, max_value=999)
     supplier = st.selectbox("Selecione o Fornecedor:", suppliers)
