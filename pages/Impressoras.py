@@ -45,8 +45,7 @@ with st.form(key="include_called", clear_on_submit=True):
                 'timestamp': formatted_timestamp
             }
             mycolection.insert_one(data_to_insert)
-            st.success("Solicitação enviada com sucesso!")
             if options == "Assistência técnica":
-                st.success("Prezado(a)"+ name +", Seu chamado foi recebido e será encaminhado ao fornecedor. Ele tem até 24 horas para atendê-lo. Agradecemos a sua paciência.")
+                st.success("Prezado(a) "+ name +", Seu chamado foi recebido e será encaminhado ao fornecedor. Ele tem até 24 horas para atendê-lo. Agradecemos a sua paciência.")
             else:
                 st.success("Prezado(a)"+ name +", Seu chamado foi recebido e será encaminhado ao fornecedor. Ele tem até 12 horas para atendê-lo. Agradecemos a sua paciência.")
