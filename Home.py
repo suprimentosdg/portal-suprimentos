@@ -11,14 +11,14 @@ image_path = "logo_globo.png"
 image = col2.image(image_path, width=80)
 st.subheader("Página inicial")
 st.write("---")
-st.markdown("Bem vindo ao portal do Setor de :blue[Suprimentos!]")
-st.markdown("O Portal de Suprimentos é uma plataforma online que facilita o gerenciamento das compras e dos processos que estão sob responsabilidade do Suprimentos. Aqui você pode:")
+st.markdown("Bem vindo ao Portal do Setor de :blue[Suprimentos!]")
+st.markdown("O Portal de Suprimentos é uma plataforma online que facilita o gerenciamento das compras e dos processos que estão sob responsabilidade do Setor de Suprimentos. Aqui você pode:")
 st.caption(
     "- **Confirmar as entregas dos seus pedidos de forma rápida e segura;**")
 st.caption(
-    "- **Abrir chamados para solicitar manutenção, troca de impressoras e de toner;**")
+    "- **Abrir chamados para solicitar manutenção, toner e troca de impressoras;**")
 st.caption(
-    "- **Consultar os produtos com seus códigos disponíveis para solicitação de sua loja;**")
+    "- **Consultar os produtos que fazem parte do checklist de compras da sua loja junto com seus códigos atualizados;**")
 st.caption(
-    "- **Entrar em contato com o setor, que está sempre pronto para te atender e resolver qualquer problema.**")
+    "- **Entrar em contato com o Suprimentos, setor que está sempre pronto para lhe atender e resolver qualquer problema.**")
 st.markdown("Escolha no Menu ao lado a opção desejada.")
