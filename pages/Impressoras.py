@@ -17,9 +17,9 @@ st.subheader("Abertura de chamado para Impressora")
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
 
 with st.form(key="include_called", clear_on_submit=True):
-    name2 = st.text_input("Digite seu nome:")
-    region2 = st.selectbox("Selecione sua regional:", regions)
-    store2 = st.number_input("Digite sua loja:", min_value=0, max_value=999)
+    name = st.text_input("Digite seu nome:")
+    region = st.selectbox("Selecione sua regional:", regions)
+    store = st.number_input("Digite sua loja:", min_value=0, max_value=999)
     printerTypes = st.selectbox("Selecione seu modelo de impressora:", ["BROTHER DCP 1602","BROTHER DCP 1617","BROTHER DCP 7065","BROTHER DCP 7460","BROTHER DCP 7860","BROTHER DCP 8112","BROTHER DCP 8152","BROTHER DCP 8157","BROTHER DCP 8912","BROTHER DCP L5652DN","CANON G2110","CANON G3111","HP LASER JET M125","HP LASER JET M127","HP LASER JET M225","HP LASER JET M426","HP LASER JET M428","HP LASER JET M1132","HP LASER JET M1212","HP LASER JET M1536", "PANTUM M6559 NW"])
     options = st.selectbox("Escolha uma opção:", ["Solicitação de toner", "Assistência técnica"])
     obs = st.text_area("Obs.:", placeholder="Em caso de chamado para assistência técnica, informe o motivo da solicitação.")
@@ -28,7 +28,7 @@ with st.form(key="include_called", clear_on_submit=True):
         current_timestamp = datetime.now().timestamp()
         formatted_timestamp = datetime.fromtimestamp(current_timestamp).strftime("%d/%m/%Y %H:%M:%S")
 
-        if not name2 or not region2 or not store2 or not printerTypes or not options:
+        if not name or not region or not store or not printerTypes or not options:
             st.warning("Por favor, preencha todos os campos.")
         elif options == "Assistência técnica" and not obs:
             st.warning("Por favor, preencha o motivo da abertura do chamado.")
@@ -36,9 +36,9 @@ with st.form(key="include_called", clear_on_submit=True):
             if options != "Assistência técnica":
                 obs = ""
             data_to_insert = {
-                'nome': name2,
-                'regional': region2,
-                'loja': store2,
+                'nome': name,
+                'regional': region,
+                'loja': store,
                 'impressora': printerTypes,
                 'opcao': options,
                 'observacao': obs,
@@ -46,3 +46,7 @@ with st.form(key="include_called", clear_on_submit=True):
             }
             mycolection.insert_one(data_to_insert)
             st.success("Solicitação enviada com sucesso!")
+            if options == "Assistência técnica":
+                st.success("Prezado(a)", name, ", Seu chamado foi recebido e será encaminhado ao fornecedor. Ele tem até 24 horas para atendê-lo. Agradecemos a sua paciência.")
+            else:
+                st.success("Prezado(a)", name, ", Seu chamado foi recebido e será encaminhado ao fornecedor. Ele tem até 12 horas para atendê-lo. Agradecemos a sua paciência.")
