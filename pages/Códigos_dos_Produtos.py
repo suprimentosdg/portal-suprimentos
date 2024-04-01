@@ -27,6 +27,7 @@ with st.container():
         if cod_store == "20" or cod_store == "25" or cod_store == "31" or cod_store == "33" or cod_store == "38" or cod_store == "204" or cod_store == "205" or cod_store == "236":
             st.subheader(f"Checklist de Compras da Loja {cod_store}")
             arqPI = "PI_ssoservi_sservico_ssala.xlsx"
+            arqPI["Derivação"] = arqPI["Derivação"].astype(int)
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
             st.dataframe(checkPI)
