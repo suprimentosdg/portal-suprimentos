@@ -29,7 +29,7 @@ with st.container():
             arqPI = "PI_ssoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqPI)
             checkPI = pd.read_excel(arqpath)
-            checkPI["Derivação"] = checkPI["Derivação"].apply(lambda x: '{:,.0f}'.format(x) if isinstance(x, (int, float)) else x)
+            checkPI["Derivação"] = checkPI["Derivação"].apply(lambda x: x.replace(',', '') if isinstance(x, str) else x)
             st.dataframe(checkPI)
 
             excel_buffer = BytesIO()
