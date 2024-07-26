@@ -336,20 +336,7 @@ with st.container():
                 file_name=f"checklist_loja_{cod_store}.xlsx",
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-            )             
-
-            excel_buffer = BytesIO()
-            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
-                checkBA.to_excel(writer, index=False, header=True)
-            excel_bytes = excel_buffer.getvalue()
-
-            st.download_button(
-                label="Baixar Checklist",
-                data=excel_bytes,
-                file_name=f"checklist_loja_{cod_store}.xlsx",
-                key="download_button",
-                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
-            )          
+            )                  
 
     elif cod_region == "Pará":
         cod_store = col2.selectbox("Selecione sua Loja:", storesPA)
