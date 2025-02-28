@@ -103,7 +103,7 @@ with st.container():
 
     elif cod_region == "Maranhão":
         cod_store = col2.selectbox("Selecione sua Loja:", storesMA)
-        if cod_store == "28" or cod_store == "44" or cod_store == "253" or cod_store == "257":
+        if cod_store == "28" or cod_store == "44" or cod_store == "257":
             st.subheader(f"Checklist de Compras da Loja {cod_store}")
             arqMA = "MA_ssoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqMA)
@@ -122,7 +122,7 @@ with st.container():
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )
-        elif cod_store == "27" or cod_store == "30" or cod_store == "32" or cod_store == "34" or cod_store == "35" or cod_store == "74" or cod_store == "76" or cod_store == "77" or cod_store == "152" or cod_store == "239" or cod_store == "240" or cod_store == "241" or cod_store == "242" or cod_store == "245" or cod_store == "246" or cod_store == "247" or cod_store == "248" or cod_store == "249" or cod_store == "250" or cod_store == "251" or cod_store == "252" or cod_store == "254" or cod_store == "255" or cod_store == "256" or cod_store == "258" or cod_store == "261" or cod_store == "262" or cod_store == "263":
+        elif cod_store == "27" or cod_store == "30" or cod_store == "32" or cod_store == "34" or cod_store == "35" or cod_store == "74" or cod_store == "76" or cod_store == "77" or cod_store == "152" or cod_store == "239" or cod_store == "240" or cod_store == "241" or cod_store == "242" or cod_store == "245" or cod_store == "246" or cod_store == "247" or cod_store == "248" or cod_store == "249" or cod_store == "250" or cod_store == "251" or cod_store == "252" or cod_store == "253" or cod_store == "254" or cod_store == "255" or cod_store == "256" or cod_store == "258" or cod_store == "261" or cod_store == "262" or cod_store == "263":
             st.subheader(f"Checklist de Compras da Loja {cod_store}")
             arqMA = "MA_ssoservi_cservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqMA)
