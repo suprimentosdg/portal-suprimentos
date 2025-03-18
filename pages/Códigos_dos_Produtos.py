@@ -299,7 +299,7 @@ with st.container():
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )   
-        elif cod_store == "162" or cod_store == "164" or cod_store == "181" or cod_store == "184":
+        elif cod_store == "164" or cod_store == "181" or cod_store == "184":
             st.subheader(f"Checklist de Compras da Loja {cod_store}")
             arqBA = "BA_ssoservi_cservico_csala.xlsx"
             arqpath = os.path.join("pages", arqBA)
@@ -337,7 +337,25 @@ with st.container():
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )                  
+        elif cod_store == "162":
+            st.subheader(f"Checklist de Compras da Loja {cod_store}")
+            arqBA = "BA_ssoservi_cservico_ssala.xlsx"
+            arqpath = os.path.join("pages", arqBA)
+            checkBA = pd.read_excel(arqpath)
+            st.dataframe(checkBA) 
 
+            excel_buffer = BytesIO()
+            with pd.ExcelWriter(excel_buffer, engine="xlsxwriter") as writer:
+                checkBA.to_excel(writer, index=False, header=True)
+            excel_bytes = excel_buffer.getvalue()
+
+            st.download_button(
+                label="Baixar Checklist",
+                data=excel_bytes,
+                file_name=f"checklist_loja_{cod_store}.xlsx",
+                key="download_button",
+                mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+            )
     elif cod_region == "Pará":
         cod_store = col2.selectbox("Selecione sua Loja:", storesPA)
         if cod_store == "80" or cod_store == "81" or cod_store == "82" or cod_store == "83" or cod_store == "84" or cod_store == "85" or cod_store == "87" or cod_store == "90" or cod_store == "91" or cod_store == "95":
