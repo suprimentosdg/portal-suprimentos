@@ -12,10 +12,10 @@ col1, col2 = st.columns([6, 1])
 col1.title("Portal de Suprimentos")
 image_path = "logo_globo.png"
 image = col2.image(image_path, width=80)
-st.subheader("Confirmação de Entrega")
+st.subheader("Confirmação de Entrega"
 
 regions = ["Piauí", "Maranhão", "Rio Grande do Norte", "Bahia", "Pará"]
-suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Autopel", "Brilhante", "Casa Norte", "Distribuidora Teresina", "JB Depósito de Construção", "J D R Sousa", "Macropack", "Mix Comércio", "Nacional", "Norte Saúde Hospitalar", "Supermercado São Jorge (JB)","Nagem","Dias Comércio","HR Papeis","Perola"]
+suppliers = ["Atlas Papelaria", "Atakadinho Bahia", "Autopel", "Brilhante", "Casa Norte", "Distribuidora Teresina", "JB Depósito de Construção", "J D R Sousa", "Macropack", "Mix Comércio", "Nacional", "Norte Saúde Hospitalar", "Supermercado São Jorge (JB)","Nagem","Dias Comércio","HR Papeis","Perola","Limpac"]
 
 with st.form(key="include_confirmation", clear_on_submit=True):
     name = st.text_input("Digite seu Nome:", )
