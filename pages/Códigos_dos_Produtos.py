@@ -242,7 +242,7 @@ with st.container():
 
     elif cod_region == "Bahia":
         cod_store = col2.selectbox("Selecione sua Loja:", storesBA)
-        if cod_store == "163" or cod_store == "169" or cod_store == "171" or cod_store == "179" or cod_store == "182":
+        if cod_store == "163" or cod_store == "169" or cod_store == "171" or cod_store == "179":
             st.subheader(f"Checklist de Compras da Loja {cod_store}")
             arqBA = "BA_ssoservi_sservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqBA)
@@ -337,7 +337,7 @@ with st.container():
                 key="download_button",
                 mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
             )                  
-        elif cod_store == "162":
+        elif cod_store == "162" or cod_store == "182":
             st.subheader(f"Checklist de Compras da Loja {cod_store}")
             arqBA = "BA_ssoservi_cservico_ssala.xlsx"
             arqpath = os.path.join("pages", arqBA)
